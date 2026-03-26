@@ -11,9 +11,9 @@ dependencies = [
     "watchfiles>=1.0.4",
     "python-dotenv==1.0.1",
     "openai>=1.61.0",
-    "python-multipart==0.0.19",
+    "python-multipart==0.0.22",
     "numpy==2.2.0",
-    "pillow==11.0.0",
+    "pillow==12.1.1",
     "python-doctr[torch]==0.10.0",
     "requests==2.32.3"
 ]
