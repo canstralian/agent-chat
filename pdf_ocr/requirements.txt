@@ -132,7 +132,7 @@ pyyaml==6.0.2
     # via huggingface-hub
 rapidfuzz==3.12.1
     # via python-doctr
-requests==2.32.3
+requests==2.33.0
     # via
     #   pdf-ocr (pyproject.toml)
     #   huggingface-hub
