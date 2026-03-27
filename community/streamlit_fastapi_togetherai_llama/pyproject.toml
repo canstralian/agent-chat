@@ -11,11 +11,11 @@ dependencies = [
     "watchfiles>=1.0.4",
     "python-dotenv==1.0.1",
     "fastapi==0.115.4",
-    "llama-index==0.12.4",
+    "llama-index==0.13.0",
     "llama-index-llms-together==0.2.0",
     "uvicorn==0.32.0",
     "streamlit==1.40.0",
-    "requests==2.32.3",
+    "requests==2.33.0",
 ]
 
 [project.scripts]

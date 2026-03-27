@@ -14,7 +14,7 @@ dependencies = [
     "fastapi==0.115.4",
     "uvicorn==0.32.0",
     "streamlit==1.40.0",
-    "requests==2.32.3",
+    "requests==2.33.0",
     "groq>=0.13.0,<0.14",
 ]
 
