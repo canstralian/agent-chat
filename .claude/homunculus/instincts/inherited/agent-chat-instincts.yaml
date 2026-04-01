@@ -1,0 +1,349 @@
+# Instincts generated from https://github.com/canstralian/agent-chat
+# Generated: 2026-04-01T20:36:36.289Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: agent-chat-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/canstralian/agent-chat
+---
+
+# Agent Chat Commit Length
+
+## Action
+
+Write moderate-length commit messages (~56 characters)
+
+## Evidence
+
+- Average commit message length: 56 chars
+- Based on 6 commits
+
+---
+id: agent-chat-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/agent-chat
+---
+
+# Agent Chat Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: agent-chat-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/agent-chat
+---
+
+# Agent Chat Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: agent-chat-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/agent-chat
+---
+
+# Agent Chat Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: agent-chat-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/canstralian/agent-chat
+---
+
+# Agent Chat Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: agent-chat-workflow-dependency-update-pip-group
+trigger: "when doing dependency update pip group"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/canstralian/agent-chat
+---
+
+# Agent Chat Workflow Dependency Update Pip Group
+
+## Action
+
+Follow the dependency-update-pip-group workflow:
+1. Identify outdated dependencies in each subproject.
+2. Update the relevant dependency version in requirements.txt or pyproject.toml.
+3. Repeat for each affected subproject/directory.
+4. Commit all updated files together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: **/requirements.txt, **/pyproject.toml
+
+---
+id: agent-chat-workflow-single-dependency-update-pyproject-toml
+trigger: "when doing single dependency update pyproject toml"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/canstralian/agent-chat
+---
+
+# Agent Chat Workflow Single Dependency Update Pyproject Toml
+
+## Action
+
+Follow the single-dependency-update-pyproject-toml workflow:
+1. Identify the subprojects using the dependency.
+2. Update the dependency version in pyproject.toml for each relevant subproject.
+3. Commit all updated pyproject.toml files together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: community/*/pyproject.toml
+
+---
+id: agent-chat-instinct-file-naming
+trigger: "When creating a new file in the repository"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files: snake_case
+
+---
+id: agent-chat-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: agent-chat-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: agent-chat-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: agent-chat-instinct-import-style
+trigger: "When importing modules in Python files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: agent-chat-instinct-export-style
+trigger: "When exporting functions or classes from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: agent-chat-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.testLocation: separate
+
+---
+id: agent-chat-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Git Commit Format
+
+## Action
+
+Write freeform commit messages without required prefixes; keep average length around 56 characters
+
+## Evidence
+
+- Pattern in commits.type: freeform
+- commits.averageLength: 56
+- Examples: 'Bump aiohttp', 'Initial commit'
+
+---
+id: agent-chat-instinct-dependency-update-pip-group
+trigger: "When dependencies need to be updated for security, compatibility, or feature reasons across several Python submodules"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Dependency Update Pip Group
+
+## Action
+
+Identify outdated dependencies in each subproject, update requirements.txt or pyproject.toml, and commit all updated files together
+
+## Evidence
+
+- Workflow: dependency-update-pip-group
+- Commits: 'Bump the pip group across 22 directories with 9 updates'
+
+---
+id: agent-chat-instinct-single-dependency-update-pyproject-toml
+trigger: "When a specific dependency needs to be bumped in one or more community submodules"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: canstralian/agent-chat
+---
+
+# Agent Chat Instinct Single Dependency Update Pyproject Toml
+
+## Action
+
+Update the dependency version in pyproject.toml for each relevant subproject and commit all updated files together
+
+## Evidence
+
+- Workflow: single-dependency-update-pyproject-toml
+- Commits: 'Bump aiohttp'
+
