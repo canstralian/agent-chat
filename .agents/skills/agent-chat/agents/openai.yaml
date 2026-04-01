@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent Chat"
+  short_description: "Repo-specific patterns and workflows for agent-chat"
+  default_prompt: "Use the agent-chat repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
