@@ -10,7 +10,7 @@ dependencies = [
     "restack-ai==0.0.62",
     "watchfiles>=1.0.4",
     "python-dotenv==1.0.1",
-    "requests==2.32.3",
+    "requests==2.33.0",
     "weaviate-client==4.9.0",
 ]
 
