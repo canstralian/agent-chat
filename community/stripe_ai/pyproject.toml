@@ -15,7 +15,7 @@ dependencies = [
     "stripe-agent-toolkit>=0.1.21,<0.2",
     "langchain>=0.3.9,<0.4",
     "stripe>=11.3.0,<12",
-    "langchain-openai>=0.2.11,<0.3",
+    "langchain-openai>=0.2.11,<1.2",
 ]
 
 [project.scripts]
