@@ -9,7 +9,7 @@ dependencies = [
     "pydantic>=2.10.6",
     "restack-ai==0.0.62",
     "watchfiles>=1.0.4",
-    "python-dotenv==1.0.1",
+    "python-dotenv==1.2.2",
     "openai>=1.61.0",
     "bosdyn-client==4.1.0",
     "opencv-python==4.10.0.84",
