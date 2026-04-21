@@ -6,7 +6,7 @@ authors = [{ name = "Restack Team", email = "service@restack.io" }]
 requires-python = ">=3.10,<3.13"
 readme = "README.md"
 dependencies = [
-    "aiohttp>=3.11.10",
+    "aiohttp>=3.13.4",
     "restack-ai==0.0.62",
 ]
 
