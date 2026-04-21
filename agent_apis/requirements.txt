@@ -2,7 +2,7 @@
 #    uv pip compile pyproject.toml -o requirements.txt
 aiohappyeyeballs==2.4.4
     # via aiohttp
-aiohttp==3.11.12
+aiohttp==3.13.4
     # via
     #   openai-greet (pyproject.toml)
     #   restack-ai
@@ -65,7 +65,7 @@ pydantic==2.10.6
     #   restack-ai
 pydantic-core==2.27.2
     # via pydantic
-python-dotenv==1.0.1
+python-dotenv==1.2.2
     # via
     #   openai-greet (pyproject.toml)
     #   restack-ai
