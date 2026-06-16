@@ -9,7 +9,7 @@ dependencies = [
     "pydantic>=2.10.6",
     "restack-ai==0.0.62",
     "watchfiles>=1.0.4",
-    "python-dotenv==1.0.1",
+    "python-dotenv==1.2.2",
     "llama-index==0.12.4",
     "llama-index-llms-together==0.2.0",
     "flask[async]==3.0.3",
