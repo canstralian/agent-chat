@@ -10,7 +10,7 @@ dependencies = [
     "llama-index==0.12.4",
     "llama-index-llms-together==0.2.0",
     "uvicorn==0.32.0",
-    "python-dotenv==1.0.1",
+    "python-dotenv==1.2.2",
     "restack-ai>=0.0.74",
 ]
 
