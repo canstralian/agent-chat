@@ -11,7 +11,7 @@ dependencies = [
     "livekit-plugins-openai>=0.11.0",
     "livekit-plugins-silero>=0.7.4",
     "livekit-plugins-turn-detector>=0.4.2",
-    "python-dotenv==1.0.1",
+    "python-dotenv==1.2.2",
     "restack-ai>=0.0.74",
 ]
 
